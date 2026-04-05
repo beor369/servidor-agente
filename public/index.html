@@ -619,7 +619,7 @@
 
         try {
             const response = await fetch(
-                "https://personal-n8n.85wqxz.easypanel.host/webhook-test/46c87db9-da2e-4c79-9f26-f77bd4d86be6",
+                "https://personal-n8n.85wqxz.easypanel.host/webhook/46c87db9-da2e-4c79-9f26-f77bd4d86be6",
                 { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }
             );
 
@@ -675,7 +675,7 @@
         // en n8n con un nodo IF, o crear un webhook dedicado para el reset.
         // Reemplaza la URL de abajo por la que corresponda en tu flujo de n8n.
         // ─────────────────────────────────────────────────────────────────────
-        const RESET_WEBHOOK = "https://personal-n8n.85wqxz.easypanel.host/webhook-test/46c87db9-da2e-4c79-9f26-f77bd4d86be6";
+        const RESET_WEBHOOK = "https://personal-n8n.85wqxz.easypanel.host/webhook/46c87db9-da2e-4c79-9f26-f77bd4d86be6";
 
         try {
             await fetch(RESET_WEBHOOK, {
